@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>遮罩效果DEMO</title>
+		<meta name="author" content="lenovo" />
+		<!-- Date: 2015-12-27 -->
+		<link type="text/css" href="bootstrp3.3.5/css/bootstrap-theme.css" rel="stylesheet">
+		<link type="text/css" href="bootstrp3.3.5/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/overlay.css">
+		<script src="plugin/jquery-2.1.0.js" type="application/javascript"></script>
+		<script src="plugin/loading-overlay.js" type="application/javascript"></script>
+		<script src="bootstrp3.3.5/js/bootstrap.js" type="application/javascript"></script>
+		<script src="angularjs/angular.js" type="application/javascript"></script>
+		<script src="app/app.js" type="application/javascript"></script>
+		<script src="app/service.js" type="application/javascript"></script>
+	</head>
+	<body ng-app="app" id="target">
+					<div  class="table-responsive" ng-controller="testRepeatCtrl" >
+						<table class="table table-striped table-hover">
+							<tr ng-repeat=" item in list track by $index" on-finish-render-filters="target">
+								<td>{{item.name}}</td>
+								<td>{{item.age}}</td>
+								<td>{{item.address}}</td>
+							</tr>
+						</table>
+					</div>
+	</body>
+</html>
+
