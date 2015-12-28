@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>pagination</title>
+		<meta name="author" content="lenovo" />
+		<!-- Date: 2015-12-28 -->
+		<link rel="stylesheet" type="text/css" href="css/jqpagination.css">
+		<script src="plugin/jquery-2.1.0.js" type="application/javascript"></script>
+		<script src="plugin/jquery.jqpagination.js" type="application/javascript"></script>
+		<script src="angularjs/angular.js" type="application/javascript"></script>
+		<script src="app/pagination.js" type="application/javascript"></script>
+	</head>
+	<body ng-app="paginationmodule" ng-controller="testCtrl">
+		<div class="gigantic pagination" pagination-plun>
+			<a href="#" class="first" data-action="first">&laquo;</a>
+			<a href="#" class="previous" data-action="previous">&lsaquo;</a>
+			<input type="text" readonly="readonly" />
+			<a href="#" class="next" data-action="next">&rsaquo;</a>
+			<a href="#" class="last" data-action="last">&raquo;</a>
+		</div>
+	</body>
+</html>
+
